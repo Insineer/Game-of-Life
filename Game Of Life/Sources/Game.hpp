@@ -14,11 +14,14 @@ private:
     const int kCellSize = 8;
 
     bool active;
+    sf::Time fieldTimeout;
 
     uptr<sf::RenderWindow> window;
     uptr<Field> field;
 
-    void update();
+    std::vector<std::vector<int>> rules;
+
+    void update(sf::Time);
     void draw();
 
 public:
@@ -26,4 +29,5 @@ public:
 
     static Game *Get() { return inst; }
     const int GetCellSize() const;
+    const std::vector< std::vector<int>> &GetRules() const { return rules; }
 };

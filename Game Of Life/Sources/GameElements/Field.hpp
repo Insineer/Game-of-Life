@@ -10,6 +10,8 @@ private:
 
     std::vector< std::vector<int> > field;
 
+    std::vector<sf::Color> colors;
+
     sf::RectangleShape box;
 
 public:
