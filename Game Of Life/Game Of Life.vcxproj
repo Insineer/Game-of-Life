@@ -152,13 +152,11 @@
   <ItemGroup>
     <ClCompile Include="Sources\Game.cpp" />
     <ClCompile Include="Sources\GameElements\Field.cpp" />
-    <ClCompile Include="Sources\GameElements\Rule.cpp" />
     <ClCompile Include="Sources\main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Sources\Game.hpp" />
     <ClInclude Include="Sources\GameElements\Field.hpp" />
-    <ClInclude Include="Sources\GameElements\Rule.hpp" />
     <ClInclude Include="Sources\Useful.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
